@@ -3,12 +3,13 @@
     background-image: url(../../public/winter_train.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     padding :0px;
+    overflow-y: scroll;
   }
-
-  img {
+  
+img {
   max-width: 100%; /* 부모 요소의 너비에 맞게 이미지 크기 조절 */
   height: auto; /* 가로 세로 비율을 유지하면서 크기 조절 */
 }
@@ -18,6 +19,9 @@
   img {
     max-width: 50%; /* 화면 너비가 768px 이상일 때 이미지 크기 조절 */
   }
+  background-image{
+    max-height: 50%;
+  };
 }
 
 h1{
